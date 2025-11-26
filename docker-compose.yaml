@@ -9,7 +9,7 @@ services:
     restart: unless-stopped
     ports:
       - "3000:3000"        # host:container
-    env_file:
+    environment:
       - MONGODB: ${MONGODB}
       - PORT: ${PORT}
       - DEFAULT_LIMIT: ${DEFAULT_LIMIT}               
