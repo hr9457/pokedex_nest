@@ -10,6 +10,6 @@ services:
     ports:
       - "3000:3000"        # host:container
     environment:
-      - MONGODB: ${MONGODB}
-      - PORT: ${PORT}
-      - DEFAULT_LIMIT: ${DEFAULT_LIMIT}               
+      MONGODB: ${MONGODB}
+      PORT: ${PORT}
+      DEFAULT_LIMIT: ${DEFAULT_LIMIT}               
